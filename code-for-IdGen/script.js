@@ -1,7 +1,4 @@
-let subBtn = document.querySelector("submit");
 let clearBtn = document.querySelector("clear");
-    
-
 
 function getTxt(){
     let schoolNameTxt = document.getElementById("schoolName").value;
@@ -12,6 +9,7 @@ function getTxt(){
 
     console.log(schoolNameTxt, studentNameTxt, yearTxt, rollNOTxt, contactNoTxt)
 }
+
 function doClear(){
     document.getElementById("schoolName").value = "";
     document.getElementById("studentName").value = "";
@@ -19,6 +17,7 @@ function doClear(){
     document.getElementById("roll.no").value = "";
     document.getElementById("contact.no").value = "";
 }
+ 
 function getIdCard(){
     document.getElementById("fill-form").classList.add("hide");
     document.getElementById("idCard").style.display="inline";
@@ -27,4 +26,8 @@ function getIdCard(){
     document.getElementById("yearVal").innerText = document.getElementById("year").value;
     document.getElementById("rollNoVal").innerText = document.getElementById("roll.no").value;
     document.getElementById("contactNoVal").innerText = document.getElementById("contact.no").value;
+}
+ 
+function printId(){
+    window.print();
 }
